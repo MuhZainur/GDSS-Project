@@ -1,5 +1,10 @@
 # GDSS NusaCompute: a Group Decision Support System for a GPU company
 
+**Live demo:** https://gdss-project-bmsy5ocs4ym7zwr8pqcijn.streamlit.app/
+
+The demo runs on Streamlit Community Cloud. After a period without visitors it has to be woken up first, saved sessions
+and reports are not permanent there, and an AI report usually takes 1 to 3 minutes.
+
 A web app (Streamlit) for a *Group Decision Support System* (GDSS). The fictional GPU company **PT NusaCompute**
 must choose **1 of 7 GPU product designs** to prioritise for production next year. The decision is made by
 **5 decision makers (DMs)**: CEO, CTO, CMO, CFO and Head of Supply Chain. Every part of the case (products,
