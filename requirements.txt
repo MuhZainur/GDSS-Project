@@ -1,0 +1,13 @@
+# The UI library is pinned to a tested version. Streamlit changes its HTML structure between versions,
+# and the theme in app/theme.py depends on that structure.
+streamlit==1.52.1
+numpy>=1.24.0,<2
+pandas>=2.0.0
+scipy>=1.10.0
+plotly>=5.15.0,<6
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+openai>=1.0.0
+duckduckgo-search>=6.0.0
+# For testing only (not needed when deploying)
+pytest>=7.4.0

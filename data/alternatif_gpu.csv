@@ -1,0 +1,9 @@
+id,name,segment,C1 AI performance (TFLOPS (FP16)),C2 Power efficiency (TFLOPS per watt),C3 Production cost per unit (USD),C4 Demand forecast (thousand units/year),C5 Gross margin (%),C6 Time to market (months),C7 Supply chain risk (score 1-9)
+type,,,benefit,benefit,cost,benefit,benefit,cost,cost
+A1,NX-Edge 10,Edge / IoT,40,0.8,120,900,35,6,3
+A2,NX-Game 40,Mid-range gaming,120,0.55,280,1500,30,8,4
+A3,NX-Game 80,High-end gaming,330,0.73,650,600,42,10,5
+A4,NX-Pro 60,Workstation,260,0.87,900,250,55,11,5
+A5,NX-Infer 100,"Data centre, AI inference",700,1.75,4200,180,65,12,7
+A6,NX-Train 200,"Data centre, AI training",1800,2.57,11000,90,72,16,9
+A7,NX-Mobile 30,Laptop,90,1.13,210,1100,33,9,4

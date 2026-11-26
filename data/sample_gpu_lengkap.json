@@ -1,0 +1,623 @@
+{
+  "session_id": "nusacompute-2026",
+  "title": "2027 GPU production priority",
+  "goal": "Choose 1 GPU design to prioritise for mass production next year",
+  "company": "PT NusaCompute (fictional)",
+  "data_note": "All numbers are fictional, for practice.",
+  "alternatives": [
+    {
+      "id": "A1",
+      "name": "NX-Edge 10",
+      "segment": "Edge / IoT",
+      "desc": "Small, power-saving GPU for smart devices"
+    },
+    {
+      "id": "A2",
+      "name": "NX-Game 40",
+      "segment": "Mid-range gaming",
+      "desc": "Affordable gaming card, the largest market"
+    },
+    {
+      "id": "A3",
+      "name": "NX-Game 80",
+      "segment": "High-end gaming",
+      "desc": "High performance for enthusiasts"
+    },
+    {
+      "id": "A4",
+      "name": "NX-Pro 60",
+      "segment": "Workstation",
+      "desc": "3D design, rendering, CAD"
+    },
+    {
+      "id": "A5",
+      "name": "NX-Infer 100",
+      "segment": "Data centre, AI inference",
+      "desc": "Runs ready-made AI models"
+    },
+    {
+      "id": "A6",
+      "name": "NX-Train 200",
+      "segment": "Data centre, AI training",
+      "desc": "Flagship GPU for training large models"
+    },
+    {
+      "id": "A7",
+      "name": "NX-Mobile 30",
+      "segment": "Laptop",
+      "desc": "GPU for thin laptops"
+    }
+  ],
+  "criteria": [
+    {
+      "id": "C1",
+      "name": "AI performance",
+      "unit": "TFLOPS (FP16)",
+      "type": "benefit"
+    },
+    {
+      "id": "C2",
+      "name": "Power efficiency",
+      "unit": "TFLOPS per watt",
+      "type": "benefit"
+    },
+    {
+      "id": "C3",
+      "name": "Production cost per unit",
+      "unit": "USD",
+      "type": "cost"
+    },
+    {
+      "id": "C4",
+      "name": "Demand forecast",
+      "unit": "thousand units/year",
+      "type": "benefit"
+    },
+    {
+      "id": "C5",
+      "name": "Gross margin",
+      "unit": "%",
+      "type": "benefit"
+    },
+    {
+      "id": "C6",
+      "name": "Time to market",
+      "unit": "months",
+      "type": "cost"
+    },
+    {
+      "id": "C7",
+      "name": "Supply chain risk",
+      "unit": "score 1-9",
+      "type": "cost"
+    }
+  ],
+  "values": {
+    "A1": {
+      "C1": 40,
+      "C2": 0.8,
+      "C3": 120,
+      "C4": 900,
+      "C5": 35,
+      "C6": 6,
+      "C7": 3
+    },
+    "A2": {
+      "C1": 120,
+      "C2": 0.55,
+      "C3": 280,
+      "C4": 1500,
+      "C5": 30,
+      "C6": 8,
+      "C7": 4
+    },
+    "A3": {
+      "C1": 330,
+      "C2": 0.73,
+      "C3": 650,
+      "C4": 600,
+      "C5": 42,
+      "C6": 10,
+      "C7": 5
+    },
+    "A4": {
+      "C1": 260,
+      "C2": 0.87,
+      "C3": 900,
+      "C4": 250,
+      "C5": 55,
+      "C6": 11,
+      "C7": 5
+    },
+    "A5": {
+      "C1": 700,
+      "C2": 1.75,
+      "C3": 4200,
+      "C4": 180,
+      "C5": 65,
+      "C6": 12,
+      "C7": 7
+    },
+    "A6": {
+      "C1": 1800,
+      "C2": 2.57,
+      "C3": 11000,
+      "C4": 90,
+      "C5": 72,
+      "C6": 16,
+      "C7": 9
+    },
+    "A7": {
+      "C1": 90,
+      "C2": 1.13,
+      "C3": 210,
+      "C4": 1100,
+      "C5": 33,
+      "C6": 9,
+      "C7": 4
+    }
+  },
+  "dms": [
+    {
+      "id": "DM1",
+      "role": "CEO",
+      "name": "Chief Executive"
+    },
+    {
+      "id": "DM2",
+      "role": "CTO",
+      "name": "Technology Director"
+    },
+    {
+      "id": "DM3",
+      "role": "CMO",
+      "name": "Marketing Director"
+    },
+    {
+      "id": "DM4",
+      "role": "CFO",
+      "name": "Finance Director"
+    },
+    {
+      "id": "DM5",
+      "role": "Head of Supply Chain",
+      "name": "Head of Supply Chain"
+    }
+  ],
+  "dm_weighting": {
+    "mode": "ahp",
+    "order": [
+      "DM1",
+      "DM2",
+      "DM3",
+      "DM4",
+      "DM5"
+    ],
+    "pairwise": [
+      [
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      [
+        "1/2",
+        1,
+        2,
+        2,
+        3
+      ],
+      [
+        "1/3",
+        "1/2",
+        1,
+        1,
+        2
+      ],
+      [
+        "1/3",
+        "1/2",
+        1,
+        1,
+        2
+      ],
+      [
+        "1/4",
+        "1/3",
+        "1/2",
+        "1/2",
+        1
+      ]
+    ]
+  },
+  "dm_inputs": {
+    "DM1": {
+      "criteria": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7"
+      ],
+      "pairwise": [
+        [
+          1,
+          4,
+          3,
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          "1/4",
+          1,
+          1,
+          "1/4",
+          "1/4",
+          "1/2",
+          1
+        ],
+        [
+          "1/3",
+          1,
+          1,
+          "1/3",
+          "1/3",
+          1,
+          1
+        ],
+        [
+          1,
+          4,
+          3,
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          4,
+          3,
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          "1/2",
+          2,
+          1,
+          "1/2",
+          "1/2",
+          1,
+          1
+        ],
+        [
+          "1/3",
+          1,
+          1,
+          "1/3",
+          "1/3",
+          1,
+          1
+        ]
+      ],
+      "chosen_method": "AHP"
+    },
+    "DM2": {
+      "criteria": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7"
+      ],
+      "pairwise": [
+        [
+          1,
+          1,
+          5,
+          5,
+          4,
+          3,
+          3
+        ],
+        [
+          1,
+          1,
+          4,
+          4,
+          3,
+          3,
+          2
+        ],
+        [
+          "1/5",
+          "1/4",
+          1,
+          1,
+          1,
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/5",
+          "1/4",
+          1,
+          1,
+          1,
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/4",
+          "1/3",
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "1/3",
+          "1/3",
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          "1/3",
+          "1/2",
+          2,
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "chosen_method": "AHP"
+    },
+    "DM3": {
+      "criteria": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7"
+      ],
+      "pairwise": [
+        [
+          1,
+          4,
+          1,
+          "1/2",
+          2,
+          1,
+          3
+        ],
+        [
+          "1/4",
+          1,
+          "1/4",
+          "1/8",
+          "1/2",
+          "1/4",
+          1
+        ],
+        [
+          1,
+          4,
+          1,
+          "1/2",
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          8,
+          2,
+          1,
+          3,
+          2,
+          5
+        ],
+        [
+          "1/2",
+          2,
+          1,
+          "1/3",
+          1,
+          "1/2",
+          2
+        ],
+        [
+          1,
+          4,
+          1,
+          "1/2",
+          2,
+          1,
+          3
+        ],
+        [
+          "1/3",
+          1,
+          "1/2",
+          "1/5",
+          "1/2",
+          "1/3",
+          1
+        ]
+      ],
+      "chosen_method": "AHP"
+    },
+    "DM4": {
+      "criteria": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7"
+      ],
+      "pairwise": [
+        [
+          1,
+          2,
+          "1/3",
+          "1/2",
+          "1/3",
+          1,
+          "1/2"
+        ],
+        [
+          "1/2",
+          1,
+          "1/6",
+          "1/4",
+          "1/6",
+          "1/2",
+          "1/4"
+        ],
+        [
+          3,
+          6,
+          1,
+          2,
+          1,
+          3,
+          2
+        ],
+        [
+          2,
+          4,
+          "1/2",
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          3,
+          6,
+          1,
+          1,
+          1,
+          3,
+          2
+        ],
+        [
+          1,
+          2,
+          "1/3",
+          "1/2",
+          "1/3",
+          1,
+          "1/2"
+        ],
+        [
+          2,
+          4,
+          "1/2",
+          1,
+          "1/2",
+          2,
+          1
+        ]
+      ],
+      "chosen_method": "AHP"
+    },
+    "DM5": {
+      "criteria": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7"
+      ],
+      "pairwise": [
+        [
+          1,
+          1,
+          "1/3",
+          1,
+          1,
+          "1/4",
+          "1/5"
+        ],
+        [
+          1,
+          1,
+          "1/2",
+          1,
+          1,
+          "1/3",
+          "1/4"
+        ],
+        [
+          3,
+          2,
+          1,
+          2,
+          3,
+          1,
+          "1/2"
+        ],
+        [
+          1,
+          1,
+          "1/2",
+          1,
+          1,
+          "1/3",
+          "1/4"
+        ],
+        [
+          1,
+          1,
+          "1/3",
+          1,
+          1,
+          "1/4",
+          "1/5"
+        ],
+        [
+          4,
+          3,
+          1,
+          3,
+          4,
+          1,
+          1
+        ],
+        [
+          5,
+          4,
+          2,
+          4,
+          5,
+          1,
+          1
+        ]
+      ],
+      "chosen_method": "AHP"
+    }
+  },
+  "locked_alternatives": true,
+  "status": "ready"
+}
