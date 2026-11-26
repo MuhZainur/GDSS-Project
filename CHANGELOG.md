@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.1 — 2026-11-26 (web search)
+- **Web search uses the `ddgs` library** instead of the renamed `duckduckgo-search`, which returned mostly unrelated
+  home pages and encyclopedia entries. `requirements.txt` was updated.
+
 ## 0.5.0 — 2026-11-19 (English interface, engine fallback, saved reports)
 - **Everything is English now:** interface text, calculation step titles and explanations, warnings, LLM prompts and
   output, fallback text, sample data, scripts and documentation. Page names: Summary, Case data, Team assessment,
